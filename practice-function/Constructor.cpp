@@ -2,34 +2,32 @@
 #include<conio.h>
 using namespace std;
 
-class Student
+class student
 {
     public:
         int id;
-        double gpa;
+        float gpa;
 
-        void display() //function call.
+        void Display()
         {
-            cout<<id<<endl;
-            cout<<gpa<<endl;
+            cout<< "Student id is:  "<< id << " and his gpa: "<< gpa<<endl;
         }
 
-        Student (int x, double y)
+        student (int x, float y)
         {
-            id = x;
-            gpa = y;
+           id = x;
+           gpa = y;
         }
 };
 
 int main(){
 
-    Student Alim(2545, 3.55);;
-    Alim.display();
+    student Ankur (1127, 3.52);
+    Ankur.Display();
 
-    cout<<endl;
 
-    Student Suporna(1253, 2.55);
-    Suporna.display();
+    student Akash (1128, 3.75);
+    Akash.Display();
 
     getch();
 }
